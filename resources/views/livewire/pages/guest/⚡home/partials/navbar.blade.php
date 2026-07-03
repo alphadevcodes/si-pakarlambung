@@ -11,15 +11,15 @@
             <flux:navbar.item href="#tentang">Tentang</flux:navbar.item>
             <flux:navbar.item href="#penyakit">Penyakit</flux:navbar.item>
             <flux:navbar.item href="#cara-kerja">Cara Kerja</flux:navbar.item>
-            <flux:navbar.item href="#metode">Metode</flux:navbar.item>
+            <!-- <flux:navbar.item href="#metode">Metode</flux:navbar.item> -->
             <flux:navbar.item href="#faq">FAQ</flux:navbar.item>
         </flux:navbar>
 
         <flux:spacer />
 
         <div class="hidden items-center gap-2 lg:flex">
-            <flux:button href="#" variant="ghost" size="sm">Masuk</flux:button>
-            <flux:button href="#" variant="primary" size="sm" icon-trailing="arrow-right">
+            <!-- <flux:button href="#" variant="ghost" size="sm">Masuk</flux:button> -->
+            <flux:button href="diagnosis" variant="filled" size="sm" icon-trailing="arrow-right">
                 Mulai Diagnosis
             </flux:button>
         </div>
@@ -30,8 +30,7 @@
             variant="ghost"
             size="sm"
             square
-            class="lg:hidden"
-        >
+            class="lg:hidden">
             <flux:icon wire:show="!mobileMenuOpen" name="bars-3" class="size-5" />
             <flux:icon wire:show="mobileMenuOpen" wire:cloak name="x-mark" class="size-5" />
         </flux:button>
@@ -41,8 +40,7 @@
     <div
         wire:show="mobileMenuOpen"
         wire:cloak
-        class="absolute inset-x-0 top-full z-50 border-b border-zinc-200 bg-white px-6 py-4 shadow-lg lg:hidden dark:border-zinc-700 dark:bg-zinc-900"
-    >
+        class="absolute inset-x-0 top-full z-50 border-b border-zinc-200 bg-white px-6 py-4 shadow-lg lg:hidden dark:border-zinc-700 dark:bg-zinc-900">
         <nav class="flex flex-col gap-1">
             <flux:navbar.item href="#tentang" wire:click="closeMobileMenu">Tentang</flux:navbar.item>
             <flux:navbar.item href="#penyakit" wire:click="closeMobileMenu">Penyakit</flux:navbar.item>
@@ -55,7 +53,7 @@
 
         <div class="flex flex-col gap-2">
             <flux:button href="#" variant="ghost" size="sm">Masuk</flux:button>
-            <flux:button href="#" variant="primary" size="sm" icon-trailing="arrow-right">
+            <flux:button href="diagnosis" variant="primary" size="sm" icon-trailing="arrow-right">
                 Mulai Diagnosis
             </flux:button>
         </div>
