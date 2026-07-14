@@ -19,14 +19,12 @@
         </flux:sidebar.header>
 
         <flux:sidebar.nav>
-            <flux:sidebar.group :heading="__('Platform')" class="grid">
+            <flux:sidebar.group :heading="__('Menu')" class="grid">
                 <flux:sidebar.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>
                     {{ __('Dashboard') }}
                 </flux:sidebar.item>
             </flux:sidebar.group>
-            <flux:sidebar.item icon="inbox" badge="12" :href="route('criteria')" :current="request()->routeIs('criteria')" wire:navigate>{{ __('Criteria') }}</flux:sidebar.item>
-            <flux:sidebar.item icon="document-text" badge="40" :href="route('alternative')" :current="request()->routeIs('alternative')" wire:navigate>{{ __('Alternative') }}</flux:sidebar.item>
-            <flux:sidebar.item icon="document-text" badge="40" :href="route('ranking.calculate')" :current="request()->routeIs('ranking.calculate')" wire:navigate>{{ __('Rekomendasi') }}</flux:sidebar.item>
+            
             <!-- <flux:sidebar.group expandable icon="star" heading="Perhitungan" class="grid">
                 <flux:sidebar.item href="#">Marketing site</flux:sidebar.item>
                 <flux:sidebar.item href="#">Android app</flux:sidebar.item>
@@ -36,7 +34,7 @@
 
         <flux:spacer />
 
-        <flux:sidebar.nav>
+        <!-- <flux:sidebar.nav>
             <div class="px-3 py-2">
                 <div class="flex items-center justify-between rounded-lg border border-zinc-200 px-3 py-2 dark:border-zinc-700">
                     <span class="text-sm font-medium">
@@ -45,7 +43,7 @@
                     <flux:switch x-data x-model="$flux.dark" />
                 </div>
             </div>
-        </flux:sidebar.nav>
+        </flux:sidebar.nav> -->
 
         <x-desktop-user-menu class="hidden lg:block" :name="auth()->user()->name" />
     </flux:sidebar>

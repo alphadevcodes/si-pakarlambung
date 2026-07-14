@@ -16,7 +16,6 @@
                 <flux:breadcrumbs.item href="{{ route('dashboard') }}">
                     Dashboard
                 </flux:breadcrumbs.item>
-
                 <flux:breadcrumbs.item>
                     Alternatif
                 </flux:breadcrumbs.item>

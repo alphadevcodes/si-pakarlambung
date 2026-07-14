@@ -40,7 +40,7 @@
                 type="button"
                 wire:click="toggleFaq({{ $index }})"
                 class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left transition hover:bg-zinc-50 dark:hover:bg-zinc-800/60">
-                <flux:heading size="base" class="!font-semibold text-zinc-900 dark:text-white">
+                <flux:heading size="large" class="!font-semibold text-zinc-900 dark:text-white">
                     {{ $faq['q'] }}
                 </flux:heading>
 
