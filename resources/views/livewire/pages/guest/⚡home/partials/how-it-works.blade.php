@@ -15,8 +15,8 @@
 
         @php
             $steps = [
-                ['icon' => 'user-plus', 'title' => 'Buat Akun / Masuk', 'desc' => 'Daftar singkat untuk menyimpan riwayat diagnosis Anda.'],
-                ['icon' => 'clipboard-document-list', 'title' => 'Isi Gejala', 'desc' => 'Jawab pertanyaan seputar gejala yang Anda rasakan saat ini.'],
+                ['icon' => 'user-plus', 'title' => 'Masuk', 'desc' => 'Daftar singkat untuk menyimpan riwayat diagnosis Anda.'],
+                ['icon' => 'clipboard-document-list', 'title' => 'Pilih Gejala', 'desc' => 'Jawab pertanyaan seputar gejala yang Anda rasakan saat ini.'],
                 ['icon' => 'cpu-chip', 'title' => 'Sistem Memproses', 'desc' => 'Naive Bayes dengan prior klinis menghitung probabilitas tiap penyakit.'],
                 ['icon' => 'document-chart-bar', 'title' => 'Lihat Hasil', 'desc' => 'Dapatkan hasil diagnosis awal beserta persentase keyakinannya.'],
             ];

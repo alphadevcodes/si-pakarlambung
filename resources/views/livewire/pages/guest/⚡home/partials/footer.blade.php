@@ -58,7 +58,6 @@
                 </div>
             @endforeach
         </div>
-
         <flux:separator class="my-8" />
 
         <div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
